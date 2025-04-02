@@ -2,11 +2,7 @@ import numpy as np
 # import matplotlib.pyplot as plt
 import torch as T
 
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-from utils.utils import Utils
+from mlaicore.utils.utils import Utils
 device = Utils.set_accelerator()
 
 class MNIST_Dataset(T.utils.data.Dataset):

@@ -1,11 +1,9 @@
 import torch as T
 import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-from models.base_model import BaseModel
+from mlaicore.models.base_model import BaseModel
 import numpy as np
-from utils.utils import Utils
+from mlaicore.utils.utils import Utils
 import time
 
 class StudentDataset(T.utils.data.Dataset):

@@ -6,12 +6,7 @@ import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import numpy as np
 
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-
-
-from utils.utils import Utils
+from mlaicore.utils.utils import Utils
 
 # Generator
 class Generator(nn.Module):
